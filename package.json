@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-valles",
+  "version": "1.0.0",
+  "description": "proyecto-valles",
+  "main": "c",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss styles/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CandelariaValles/proyecto-valles.git"
+  },
+  "author": "Candelaria Valles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CandelariaValles/proyecto-valles/issues"
+  },
+  "homepage": "https://github.com/CandelariaValles/proyecto-valles#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
