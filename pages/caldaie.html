@@ -18,6 +18,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="icon" href="../assets/favicon.svg">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -53,7 +54,7 @@
         <p>Il calore recuperato lavora all'interno dello scambiatore primario, scaldando prima l'acqua e riducendo i costi del comfort.</p>
     </section>
     <section>
-        <img src="../assets/caldaia.jpg" alt="caldaia" class="full-width-image">
+        <img src="../assets/caldaia.jpg" alt="caldaia" class="full-width-image" data-aos="fade-left">
     </section>
     <section>
         <h3>Modelli</h3>
@@ -67,7 +68,7 @@
         </div>
     </section>
     <section>
-        <img src="../assets/caldaia2.jpg" alt="caldaia2" class="full-width-image">
+        <img src="../assets/caldaia2.jpg" alt="caldaia2" class="full-width-image" data-aos="fade-right">
         <p>La tecnologia delle caldaie a condensazione permette di risparmiare notevolmente sui costi della fornitura (anche fino al 30% rispetto ad una caldaia a gas), dal momento che non c'è continuo bisogno di nuovo gas per ottenere calore. Questo si traduce anche in un minore impatto ambientale, dal momento che c'è minor produzione di fumi e anche riduzione della temperatura di quelli prodotti alla fine del riciclo dei fumi primari.</p>
     </section>
     <footer>
@@ -80,6 +81,12 @@
         </p>
         <p>Rissol S.R.L.</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,
+        });
+    </script>
 </body>
 
 </html>
