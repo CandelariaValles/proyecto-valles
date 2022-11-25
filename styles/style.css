@@ -12,10 +12,11 @@ nav {
   position: fixed; }
 
 header {
+  text-align: center;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
   width: 100%;
   background-color: #9fe79f; }
 
@@ -26,9 +27,9 @@ ul li {
   display: inline-block; }
 
 li a {
-  display: inline;
-  color: white;
   text-align: center;
+  color: white;
+  display: inline;
   padding: 16px 30px;
   text-decoration: none;
   background-color: #333; }
@@ -38,7 +39,7 @@ li a:hover {
   opacity: 50%; }
 
 .active {
-  background-color: #9fe79f; }
+  color: #9fe79f; }
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
@@ -61,11 +62,13 @@ body {
   .full-width-image {
     padding: 3%; } }
 
-h1, h3 {
+h3, h2 {
   margin-top: 0%;
   margin-bottom: 0%;
-  background-color: #9fe79f;
-  size: 5%; }
+  background-color: #9fe79f; }
+
+h2 {
+  background-color: white; }
 
 p {
   padding: 1%; }
@@ -111,13 +114,14 @@ input[type=submit]:hover {
   color: white; }
 
 footer {
-  background-color: #333;
-  width: 100%;
+  text-align: center;
   color: white;
+  background-color: #333333bd;
+  width: 100%;
   position: absolute; }
 
-a {
-  color: white; }
+footer a {
+  color: white !important; }
 
 section {
   text-align: center; }

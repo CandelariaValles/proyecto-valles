@@ -1,4 +1,8 @@
 @import 'variables';
+@mixin center-white {
+    text-align: center;
+    color:white;
+}
 nav ul {
     overflow: hidden;
     list-style: none;
@@ -13,10 +17,10 @@ nav {
     position: fixed;
 }
 header {
+    @include center-white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
     width: 100%;
     background-color: $color-principal;
 }
@@ -27,9 +31,8 @@ ul li {
     display: inline-block;
 }
 li a {
+    @include center-white;
     display:inline;
-    color:white;
-    text-align: center;
     padding: 16px 30px;
     text-decoration: none;
     background-color: #333;
@@ -39,7 +42,7 @@ li a:hover {
     opacity: 50%;
 }
 .active {
-    background-color: $color-principal;
+    color: $color-principal;
 }
 body {
     font-family: 'Roboto Condensed', sans-serif;
@@ -62,11 +65,14 @@ body {
     .full-width-image {
         padding: 3%;
     }}
-h1,h3 {
+h3 {
     margin-top: 0%;
     margin-bottom: 0%;
     background-color: $color-principal;
-    size: 5%;
+}
+h2 {
+    @extend h3;
+    background-color: white;
 }
 p {
     padding: 1%;
@@ -96,14 +102,14 @@ textarea {
     resize: vertical
 }
 input[type=submit] {
-        background-color: white;
-        border: none;
-        color: black;
-        padding: 8px 16px;
-        text-align: center;
-        font-size: 16px;
-        margin: 4px 2px;
-        transition: 0.3s;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
     float: right;
     border-radius: 16px;
 }
@@ -112,13 +118,13 @@ input[type=submit]:hover {
     color: white;    
 }
 footer {
-    background-color: $background-nav;
+    @include center-white;
+    background-color: $background-footer;
     width: 100%;
-    color: white;
-    position: absolute
+    position: absolute;
 }
-a {
-    color: white;
+footer a {
+    color: white!important;
 }
 section {
     text-align: center;
